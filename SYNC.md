@@ -41,7 +41,8 @@ opisany w README. Wyniki badań nie były optymalizowane ani przeliczane.
 
 Hook pre-commit uruchamia skan. Hook pre-push dodatkowo wymaga lokalnego pliku
 `.git/first-push-approved`, który operator tworzy dopiero po zgodzie właściciela.
-Plik ten nie jest częścią repozytorium. Hooki są dodatkową kontrolą, można je
+Plik ten nie jest częścią repozytorium i jest usuwany po zakończonej publikacji;
+następny przygotowany push wymaga własnego przeglądu i zgody. Hooki są dodatkową kontrolą, można je
 technicznie ominąć; nie zastępują świadomego przeglądu ani zgody.
 
 Po świeżym klonowaniu trzeba jawnie ustawić `core.hooksPath=.githooks` oraz

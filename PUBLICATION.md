@@ -1,5 +1,10 @@
 # Kontrola przed pierwszą publikacją — 27.10.2026
 
+**Notatka historyczna:** pierwszy commit `88f6b9c` został następnie zatwierdzony
+i wysłany; potwierdzono jego SHA na prywatnym GitHubie i odczyt raportu przez
+konektor. Logowanie Git Credential Manager zostało ukończone. Poniższe punkty
+opisują stan sprzed tego pushu. Aktualizacja Recovery v2 jest osobnym przeglądem.
+
 Cel: prywatny przegląd kodu i raportów, bez dostępu do rachunku i bez wdrożenia.
 Repozytorium docelowe zweryfikowano przez połączenie GitHub jako prywatne, dostępne
 do zapisu, z pustą listą gałęzi. W instalacji źródłowej nie było repozytorium Git.

@@ -8,7 +8,9 @@ nie wdraża zmian do DEMO, nie uruchamia MT5 i nie autoryzuje handlu.
 
 Przewaga inwestycyjna nie została potwierdzona. Najnowsze wnioski w tej kopii:
 
-- [Odzyskiwanie DEMO po rozłączeniu](research/demo_recovery/REPORT.md)
+- [Recovery v2: kompletny nadzór, testy i decyzje](research/demo_recovery_v2/REPORT.md)
+- [Recovery v2: migracja i rollback — wymagają zgody](research/demo_recovery_v2/MIGRATION.md)
+- [Wcześniejsza diagnostyka rozłączenia](research/demo_recovery/REPORT.md)
 - [Propozycja nadzoru — niewdrożona](research/demo_recovery/PROPOSAL.md)
 - [Przyszła walidacja i zbieranie danych](research/forward_validation/REPORT.md)
 - [Rdzeń replay](research/tick_validation/integrated_replay/REPORT.md)
@@ -17,6 +19,11 @@ Przewaga inwestycyjna nie została potwierdzona. Najnowsze wnioski w tej kopii:
 Raporty opisują stan w podanych w nich datach. GitHub nie odczytuje na żywo rachunku,
 kwotowań ani procesu DEMO. NO-GO dotyczące odporności, kompletności danych i
 wiarygodności replay nie jest oceną rentowności strategii.
+
+Recovery v2 przeszedł 202 testy i dwie próby Harmonogramu w izolacji; nie został
+wdrożony. Pełnego restartu Windows nie wykonano. W kontroli DEMO stwierdzono
+kwarantannę wywołaną dokładnym porównaniem TP typu float; nadzór restartów jej
+nie usuwa. Okno forward 27.10 pozostaje w raporcie oczekujące na koniec sesji.
 
 ## Zawartość i ograniczenia
 

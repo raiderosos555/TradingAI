@@ -2088,6 +2088,564 @@
       "source_sha256": "aabd90488147aecd2f363e87a8caf421568e7a745ea20c4098b67373168b8fc1",
       "export_sha256": "aabd90488147aecd2f363e87a8caf421568e7a745ea20c4098b67373168b8fc1",
       "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/candidate/trading_ai/__init__.py",
+      "source_sha256": "6ed5e09c8c73f15605b2fd967fa841311fcf3997c645ceb2c82647e3f5182fb9",
+      "export_sha256": "6ed5e09c8c73f15605b2fd967fa841311fcf3997c645ceb2c82647e3f5182fb9",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/candidate/trading_ai/__main__.py",
+      "source_sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "export_sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/candidate/trading_ai/analyzer.py",
+      "source_sha256": "9ee9622d4d7f13e1c40b681ee6504957cab01f0a586ff84e8277716a26b238e9",
+      "export_sha256": "9ee9622d4d7f13e1c40b681ee6504957cab01f0a586ff84e8277716a26b238e9",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/candidate/trading_ai/backtest.py",
+      "source_sha256": "57edf5d8c713d87888c65e23003aa516c4fe22603f4c986a0256aad5e8208961",
+      "export_sha256": "57edf5d8c713d87888c65e23003aa516c4fe22603f4c986a0256aad5e8208961",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/candidate/trading_ai/briefings.py",
+      "source_sha256": "4c4b4ee39baf1e61ba1e299aa13c5074bb079713176353ed45e490633edc1cc3",
+      "export_sha256": "4c4b4ee39baf1e61ba1e299aa13c5074bb079713176353ed45e490633edc1cc3",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/candidate/trading_ai/broker.py",
+      "source_sha256": "47a4eea6a205f0a5d0218d0c99abbf6d369088b8dc21d9c3519aa2992ddc5bf0",
+      "export_sha256": "47a4eea6a205f0a5d0218d0c99abbf6d369088b8dc21d9c3519aa2992ddc5bf0",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/candidate/trading_ai/calendar.py",
+      "source_sha256": "2c2d64613a723a33a123a53ace1c277e9087f1b8855232c7c6804c91c91c37de",
+      "export_sha256": "2c2d64613a723a33a123a53ace1c277e9087f1b8855232c7c6804c91c91c37de",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/candidate/trading_ai/cli.py",
+      "source_sha256": "bf65d8e5e6b78befeea97518f7a893e406c582facd93b8304c9745f7ae5a3a39",
+      "export_sha256": "bf65d8e5e6b78befeea97518f7a893e406c582facd93b8304c9745f7ae5a3a39",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/candidate/trading_ai/collector.py",
+      "source_sha256": "cb858881cb390f9d2c176d3fd5312800c14610c46a474a2eec04526c9cb2903f",
+      "export_sha256": "cb858881cb390f9d2c176d3fd5312800c14610c46a474a2eec04526c9cb2903f",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/candidate/trading_ai/execution.py",
+      "source_sha256": "5070e74b9b346007bd75b230a467a3c509148f8c720f3ffc0673eeff95dbb24f",
+      "export_sha256": "5070e74b9b346007bd75b230a467a3c509148f8c720f3ffc0673eeff95dbb24f",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/candidate/trading_ai/indicators.py",
+      "source_sha256": "3eb9b3d9f67f6a98162a3abaf090112e0e9e3d9148f9884cd74277284baa72ef",
+      "export_sha256": "3eb9b3d9f67f6a98162a3abaf090112e0e9e3d9148f9884cd74277284baa72ef",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/candidate/trading_ai/journal.py",
+      "source_sha256": "39438d0142b048ddf87bb98e356e4adefb9f8aa68bc0546dcee808b314a41cd9",
+      "export_sha256": "39438d0142b048ddf87bb98e356e4adefb9f8aa68bc0546dcee808b314a41cd9",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/candidate/trading_ai/manager.py",
+      "source_sha256": "09887e18c3509d95c53af20ce441927f12e7cb3a86e5fa2586ffcb8605856b52",
+      "export_sha256": "09887e18c3509d95c53af20ce441927f12e7cb3a86e5fa2586ffcb8605856b52",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/candidate/trading_ai/models.py",
+      "source_sha256": "f43371c30870dc5c4933826398df1820062990c66b4031d0567be613dabfd765",
+      "export_sha256": "f43371c30870dc5c4933826398df1820062990c66b4031d0567be613dabfd765",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/candidate/trading_ai/news.py",
+      "source_sha256": "8d4ebffb20b5b2ebad1943c7558a692fe986db4d4c35f7992d40dab3efc4f224",
+      "export_sha256": "8d4ebffb20b5b2ebad1943c7558a692fe986db4d4c35f7992d40dab3efc4f224",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/candidate/trading_ai/observer.py",
+      "source_sha256": "b846a4b05f34e845639d27f82cdf5fe9ff76cee05d8a8d4370df59e15e1ee7f9",
+      "export_sha256": "b846a4b05f34e845639d27f82cdf5fe9ff76cee05d8a8d4370df59e15e1ee7f9",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/candidate/trading_ai/portfolio_research.py",
+      "source_sha256": "0d5280b30181aaf51a5a7cb6ca65c40bd33aeeb5492517dbec2edf65e5a0f7d6",
+      "export_sha256": "458a328e6e74235d8c5d17ace81b931e982b84b0ed2aa31345402e3aa567d337",
+      "changed_for_export": true
+    },
+    {
+      "path": "research/demo_recovery_v2/candidate/trading_ai/reporter.py",
+      "source_sha256": "0928b74efd7b16062901d4b1d40534e51a873476c82947c34a5753f856d10282",
+      "export_sha256": "0928b74efd7b16062901d4b1d40534e51a873476c82947c34a5753f856d10282",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/candidate/trading_ai/research_validation.py",
+      "source_sha256": "bdf26268c90b900945d20f3321ea897f37c4986848d21142bf562bdb4e81cad8",
+      "export_sha256": "bdf26268c90b900945d20f3321ea897f37c4986848d21142bf562bdb4e81cad8",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/candidate/trading_ai/risk.py",
+      "source_sha256": "cb0827bd854474294e7162a7035e3c112d22eb7d36639230a0aa46bdc68ddca0",
+      "export_sha256": "cb0827bd854474294e7162a7035e3c112d22eb7d36639230a0aa46bdc68ddca0",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/candidate/trading_ai/runtime.py",
+      "source_sha256": "c1715ad7fbc3e613c856795afd731d457d98d9270d5291c6cb400493d51728b9",
+      "export_sha256": "c1715ad7fbc3e613c856795afd731d457d98d9270d5291c6cb400493d51728b9",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/candidate/trading_ai/simulation.py",
+      "source_sha256": "5474617489728658a5109023a727fb2686e32021d9c2884eeab478b68e048c89",
+      "export_sha256": "5474617489728658a5109023a727fb2686e32021d9c2884eeab478b68e048c89",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/candidate/trading_ai/strategy.py",
+      "source_sha256": "5ac1ee939db1f05da7fa547791ba7583fdf9ceb0233ca57c95ac87a2df0f6f7c",
+      "export_sha256": "5ac1ee939db1f05da7fa547791ba7583fdf9ceb0233ca57c95ac87a2df0f6f7c",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/candidate/trading_ai/sync.py",
+      "source_sha256": "aabd90488147aecd2f363e87a8caf421568e7a745ea20c4098b67373168b8fc1",
+      "export_sha256": "aabd90488147aecd2f363e87a8caf421568e7a745ea20c4098b67373168b8fc1",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/deploy_after_approval.ps1",
+      "source_sha256": "a2b7d1888be1afe9d9bf7a136d9cc72d4e9bde4f2aa8dd23be97df2e360a66bd",
+      "export_sha256": "a2b7d1888be1afe9d9bf7a136d9cc72d4e9bde4f2aa8dd23be97df2e360a66bd",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/deployment_guard.py",
+      "source_sha256": "47749001f9b02c8e3476582dd8693c0fdd90fcf8ac37f8cc7c89bc0b4c4a05e1",
+      "export_sha256": "47749001f9b02c8e3476582dd8693c0fdd90fcf8ac37f8cc7c89bc0b4c4a05e1",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/DESIGN.md",
+      "source_sha256": "58e0f75e2473c7f9a9f8af5a366b7fbefa2993f0125b8ebb14f527ab2ec3b149",
+      "export_sha256": "594da388de0fe3964d2e00f07f7189c35c0a22cfe7e05c112925d411f54e01c6",
+      "changed_for_export": true
+    },
+    {
+      "path": "research/demo_recovery_v2/diagnose_uncertain.py",
+      "source_sha256": "c98113054730321b2c6a40390cc11b8531332484e766c084d758af7f5f3637b2",
+      "export_sha256": "c98113054730321b2c6a40390cc11b8531332484e766c084d758af7f5f3637b2",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/finish_lab.ps1",
+      "source_sha256": "06c63ed2e2e10af4bc8fce700380158479d7ee657ba821abb114a5deefe5f97e",
+      "export_sha256": "06c63ed2e2e10af4bc8fce700380158479d7ee657ba821abb114a5deefe5f97e",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/install_lab.ps1",
+      "source_sha256": "41dca4afa9a7405e656d78a36cf3c2e1cf3e507216c3bb695204a5753679e2f0",
+      "export_sha256": "41dca4afa9a7405e656d78a36cf3c2e1cf3e507216c3bb695204a5753679e2f0",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/lab_runtime.py",
+      "source_sha256": "954cd1f7d97a0948b523dcb6efd47b5c20be4e577978ac4337b3f67c4d4167db",
+      "export_sha256": "954cd1f7d97a0948b523dcb6efd47b5c20be4e577978ac4337b3f67c4d4167db",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/launcher.py",
+      "source_sha256": "41ef790f4f7f7db64d864d659cc8e6186e7971db868525d06e1b165082d28473",
+      "export_sha256": "41ef790f4f7f7db64d864d659cc8e6186e7971db868525d06e1b165082d28473",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/make_config.py",
+      "source_sha256": "67c374dc85db7b20de96a0e114b9825836311dc7f8a4b08fa35debc4b4d391fe",
+      "export_sha256": "67c374dc85db7b20de96a0e114b9825836311dc7f8a4b08fa35debc4b4d391fe",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/MIGRATION.md",
+      "source_sha256": "6e1eb71891bbcd28710f433f9de5495f064d1974036e4091dd808d81348b08b6",
+      "export_sha256": "090efbae8c0e45a3cc0d35688883cc12585158b0238e911a51fa25f9ae5d8f9a",
+      "changed_for_export": true
+    },
+    {
+      "path": "research/demo_recovery_v2/prepare_deployment.py",
+      "source_sha256": "4525755bdfa9cd6335d4ea13490009923f871e48863a6c73c5f44de3370dbabb",
+      "export_sha256": "4525755bdfa9cd6335d4ea13490009923f871e48863a6c73c5f44de3370dbabb",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/readiness_probe.py",
+      "source_sha256": "a5493abfd5015c684f39dc56b7384ddc02cd8a15174fb85575aabd1b1347f699",
+      "export_sha256": "a5493abfd5015c684f39dc56b7384ddc02cd8a15174fb85575aabd1b1347f699",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/release/launcher.py",
+      "source_sha256": "41ef790f4f7f7db64d864d659cc8e6186e7971db868525d06e1b165082d28473",
+      "export_sha256": "41ef790f4f7f7db64d864d659cc8e6186e7971db868525d06e1b165082d28473",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/release/supervisor.py",
+      "source_sha256": "5b9d831d1102e9e9994bcccf7471f5c5afe9df03ecce7f1ec66a56ce08939f86",
+      "export_sha256": "5b9d831d1102e9e9994bcccf7471f5c5afe9df03ecce7f1ec66a56ce08939f86",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/release/trading_ai/__init__.py",
+      "source_sha256": "6ed5e09c8c73f15605b2fd967fa841311fcf3997c645ceb2c82647e3f5182fb9",
+      "export_sha256": "6ed5e09c8c73f15605b2fd967fa841311fcf3997c645ceb2c82647e3f5182fb9",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/release/trading_ai/__main__.py",
+      "source_sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "export_sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/release/trading_ai/analyzer.py",
+      "source_sha256": "9ee9622d4d7f13e1c40b681ee6504957cab01f0a586ff84e8277716a26b238e9",
+      "export_sha256": "9ee9622d4d7f13e1c40b681ee6504957cab01f0a586ff84e8277716a26b238e9",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/release/trading_ai/backtest.py",
+      "source_sha256": "57edf5d8c713d87888c65e23003aa516c4fe22603f4c986a0256aad5e8208961",
+      "export_sha256": "57edf5d8c713d87888c65e23003aa516c4fe22603f4c986a0256aad5e8208961",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/release/trading_ai/briefings.py",
+      "source_sha256": "4c4b4ee39baf1e61ba1e299aa13c5074bb079713176353ed45e490633edc1cc3",
+      "export_sha256": "4c4b4ee39baf1e61ba1e299aa13c5074bb079713176353ed45e490633edc1cc3",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/release/trading_ai/broker.py",
+      "source_sha256": "47a4eea6a205f0a5d0218d0c99abbf6d369088b8dc21d9c3519aa2992ddc5bf0",
+      "export_sha256": "47a4eea6a205f0a5d0218d0c99abbf6d369088b8dc21d9c3519aa2992ddc5bf0",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/release/trading_ai/calendar.py",
+      "source_sha256": "2c2d64613a723a33a123a53ace1c277e9087f1b8855232c7c6804c91c91c37de",
+      "export_sha256": "2c2d64613a723a33a123a53ace1c277e9087f1b8855232c7c6804c91c91c37de",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/release/trading_ai/cli.py",
+      "source_sha256": "bf65d8e5e6b78befeea97518f7a893e406c582facd93b8304c9745f7ae5a3a39",
+      "export_sha256": "bf65d8e5e6b78befeea97518f7a893e406c582facd93b8304c9745f7ae5a3a39",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/release/trading_ai/collector.py",
+      "source_sha256": "cb858881cb390f9d2c176d3fd5312800c14610c46a474a2eec04526c9cb2903f",
+      "export_sha256": "cb858881cb390f9d2c176d3fd5312800c14610c46a474a2eec04526c9cb2903f",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/release/trading_ai/execution.py",
+      "source_sha256": "5070e74b9b346007bd75b230a467a3c509148f8c720f3ffc0673eeff95dbb24f",
+      "export_sha256": "5070e74b9b346007bd75b230a467a3c509148f8c720f3ffc0673eeff95dbb24f",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/release/trading_ai/indicators.py",
+      "source_sha256": "3eb9b3d9f67f6a98162a3abaf090112e0e9e3d9148f9884cd74277284baa72ef",
+      "export_sha256": "3eb9b3d9f67f6a98162a3abaf090112e0e9e3d9148f9884cd74277284baa72ef",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/release/trading_ai/journal.py",
+      "source_sha256": "39438d0142b048ddf87bb98e356e4adefb9f8aa68bc0546dcee808b314a41cd9",
+      "export_sha256": "39438d0142b048ddf87bb98e356e4adefb9f8aa68bc0546dcee808b314a41cd9",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/release/trading_ai/manager.py",
+      "source_sha256": "09887e18c3509d95c53af20ce441927f12e7cb3a86e5fa2586ffcb8605856b52",
+      "export_sha256": "09887e18c3509d95c53af20ce441927f12e7cb3a86e5fa2586ffcb8605856b52",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/release/trading_ai/models.py",
+      "source_sha256": "f43371c30870dc5c4933826398df1820062990c66b4031d0567be613dabfd765",
+      "export_sha256": "f43371c30870dc5c4933826398df1820062990c66b4031d0567be613dabfd765",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/release/trading_ai/news.py",
+      "source_sha256": "8d4ebffb20b5b2ebad1943c7558a692fe986db4d4c35f7992d40dab3efc4f224",
+      "export_sha256": "8d4ebffb20b5b2ebad1943c7558a692fe986db4d4c35f7992d40dab3efc4f224",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/release/trading_ai/observer.py",
+      "source_sha256": "b846a4b05f34e845639d27f82cdf5fe9ff76cee05d8a8d4370df59e15e1ee7f9",
+      "export_sha256": "b846a4b05f34e845639d27f82cdf5fe9ff76cee05d8a8d4370df59e15e1ee7f9",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/release/trading_ai/portfolio_research.py",
+      "source_sha256": "0d5280b30181aaf51a5a7cb6ca65c40bd33aeeb5492517dbec2edf65e5a0f7d6",
+      "export_sha256": "458a328e6e74235d8c5d17ace81b931e982b84b0ed2aa31345402e3aa567d337",
+      "changed_for_export": true
+    },
+    {
+      "path": "research/demo_recovery_v2/release/trading_ai/reporter.py",
+      "source_sha256": "0928b74efd7b16062901d4b1d40534e51a873476c82947c34a5753f856d10282",
+      "export_sha256": "0928b74efd7b16062901d4b1d40534e51a873476c82947c34a5753f856d10282",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/release/trading_ai/research_validation.py",
+      "source_sha256": "bdf26268c90b900945d20f3321ea897f37c4986848d21142bf562bdb4e81cad8",
+      "export_sha256": "bdf26268c90b900945d20f3321ea897f37c4986848d21142bf562bdb4e81cad8",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/release/trading_ai/risk.py",
+      "source_sha256": "cb0827bd854474294e7162a7035e3c112d22eb7d36639230a0aa46bdc68ddca0",
+      "export_sha256": "cb0827bd854474294e7162a7035e3c112d22eb7d36639230a0aa46bdc68ddca0",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/release/trading_ai/runtime.py",
+      "source_sha256": "c1715ad7fbc3e613c856795afd731d457d98d9270d5291c6cb400493d51728b9",
+      "export_sha256": "c1715ad7fbc3e613c856795afd731d457d98d9270d5291c6cb400493d51728b9",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/release/trading_ai/simulation.py",
+      "source_sha256": "5474617489728658a5109023a727fb2686e32021d9c2884eeab478b68e048c89",
+      "export_sha256": "5474617489728658a5109023a727fb2686e32021d9c2884eeab478b68e048c89",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/release/trading_ai/strategy.py",
+      "source_sha256": "5ac1ee939db1f05da7fa547791ba7583fdf9ceb0233ca57c95ac87a2df0f6f7c",
+      "export_sha256": "5ac1ee939db1f05da7fa547791ba7583fdf9ceb0233ca57c95ac87a2df0f6f7c",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/release/trading_ai/sync.py",
+      "source_sha256": "aabd90488147aecd2f363e87a8caf421568e7a745ea20c4098b67373168b8fc1",
+      "export_sha256": "aabd90488147aecd2f363e87a8caf421568e7a745ea20c4098b67373168b8fc1",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/REPORT.md",
+      "source_sha256": "51ed90f4538a924dc043dcfa5aad2f59810614e83b1c448e8cc5cb7c6578a000",
+      "export_sha256": "faee4cdeeddfb5e406badd62f204546781fa90c4b6eb6070e75af360a97f432e",
+      "changed_for_export": true
+    },
+    {
+      "path": "research/demo_recovery_v2/REPRODUCE.md",
+      "source_sha256": "d4885932b993f6471edcff50680e6cbd8b0bf2db3f8d67d969b17ff2bcce5d7e",
+      "export_sha256": "7ae3d0e04d5a2b67caa5e1ee2bad2fb90204024ef266800405483d9671e343b9",
+      "changed_for_export": true
+    },
+    {
+      "path": "research/demo_recovery_v2/rollback_after_approval.ps1",
+      "source_sha256": "b607a68b8f6be91bd642ac78d845a0c9289ab6e33964a625e2987627e129bef6",
+      "export_sha256": "b607a68b8f6be91bd642ac78d845a0c9289ab6e33964a625e2987627e129bef6",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/runtime-candidate.patch",
+      "source_sha256": "1858a947939af1f50dc8ab0cd96e282d597ff6113de83e3a3228924b47156e1b",
+      "export_sha256": "1858a947939af1f50dc8ab0cd96e282d597ff6113de83e3a3228924b47156e1b",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/scheduler_watch.py",
+      "source_sha256": "153902eca96181b92feb81a96b96b03009771abc7c8232e2f3035ce5dbfa804e",
+      "export_sha256": "153902eca96181b92feb81a96b96b03009771abc7c8232e2f3035ce5dbfa804e",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/source_snapshot/trading_ai/__init__.py",
+      "source_sha256": "6ed5e09c8c73f15605b2fd967fa841311fcf3997c645ceb2c82647e3f5182fb9",
+      "export_sha256": "6ed5e09c8c73f15605b2fd967fa841311fcf3997c645ceb2c82647e3f5182fb9",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/source_snapshot/trading_ai/__main__.py",
+      "source_sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "export_sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/source_snapshot/trading_ai/analyzer.py",
+      "source_sha256": "9ee9622d4d7f13e1c40b681ee6504957cab01f0a586ff84e8277716a26b238e9",
+      "export_sha256": "9ee9622d4d7f13e1c40b681ee6504957cab01f0a586ff84e8277716a26b238e9",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/source_snapshot/trading_ai/backtest.py",
+      "source_sha256": "57edf5d8c713d87888c65e23003aa516c4fe22603f4c986a0256aad5e8208961",
+      "export_sha256": "57edf5d8c713d87888c65e23003aa516c4fe22603f4c986a0256aad5e8208961",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/source_snapshot/trading_ai/briefings.py",
+      "source_sha256": "4c4b4ee39baf1e61ba1e299aa13c5074bb079713176353ed45e490633edc1cc3",
+      "export_sha256": "4c4b4ee39baf1e61ba1e299aa13c5074bb079713176353ed45e490633edc1cc3",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/source_snapshot/trading_ai/broker.py",
+      "source_sha256": "47a4eea6a205f0a5d0218d0c99abbf6d369088b8dc21d9c3519aa2992ddc5bf0",
+      "export_sha256": "47a4eea6a205f0a5d0218d0c99abbf6d369088b8dc21d9c3519aa2992ddc5bf0",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/source_snapshot/trading_ai/calendar.py",
+      "source_sha256": "2c2d64613a723a33a123a53ace1c277e9087f1b8855232c7c6804c91c91c37de",
+      "export_sha256": "2c2d64613a723a33a123a53ace1c277e9087f1b8855232c7c6804c91c91c37de",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/source_snapshot/trading_ai/cli.py",
+      "source_sha256": "bf65d8e5e6b78befeea97518f7a893e406c582facd93b8304c9745f7ae5a3a39",
+      "export_sha256": "bf65d8e5e6b78befeea97518f7a893e406c582facd93b8304c9745f7ae5a3a39",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/source_snapshot/trading_ai/collector.py",
+      "source_sha256": "cb858881cb390f9d2c176d3fd5312800c14610c46a474a2eec04526c9cb2903f",
+      "export_sha256": "cb858881cb390f9d2c176d3fd5312800c14610c46a474a2eec04526c9cb2903f",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/source_snapshot/trading_ai/execution.py",
+      "source_sha256": "5070e74b9b346007bd75b230a467a3c509148f8c720f3ffc0673eeff95dbb24f",
+      "export_sha256": "5070e74b9b346007bd75b230a467a3c509148f8c720f3ffc0673eeff95dbb24f",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/source_snapshot/trading_ai/indicators.py",
+      "source_sha256": "3eb9b3d9f67f6a98162a3abaf090112e0e9e3d9148f9884cd74277284baa72ef",
+      "export_sha256": "3eb9b3d9f67f6a98162a3abaf090112e0e9e3d9148f9884cd74277284baa72ef",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/source_snapshot/trading_ai/journal.py",
+      "source_sha256": "39438d0142b048ddf87bb98e356e4adefb9f8aa68bc0546dcee808b314a41cd9",
+      "export_sha256": "39438d0142b048ddf87bb98e356e4adefb9f8aa68bc0546dcee808b314a41cd9",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/source_snapshot/trading_ai/manager.py",
+      "source_sha256": "09887e18c3509d95c53af20ce441927f12e7cb3a86e5fa2586ffcb8605856b52",
+      "export_sha256": "09887e18c3509d95c53af20ce441927f12e7cb3a86e5fa2586ffcb8605856b52",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/source_snapshot/trading_ai/models.py",
+      "source_sha256": "f43371c30870dc5c4933826398df1820062990c66b4031d0567be613dabfd765",
+      "export_sha256": "f43371c30870dc5c4933826398df1820062990c66b4031d0567be613dabfd765",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/source_snapshot/trading_ai/news.py",
+      "source_sha256": "8d4ebffb20b5b2ebad1943c7558a692fe986db4d4c35f7992d40dab3efc4f224",
+      "export_sha256": "8d4ebffb20b5b2ebad1943c7558a692fe986db4d4c35f7992d40dab3efc4f224",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/source_snapshot/trading_ai/observer.py",
+      "source_sha256": "b846a4b05f34e845639d27f82cdf5fe9ff76cee05d8a8d4370df59e15e1ee7f9",
+      "export_sha256": "b846a4b05f34e845639d27f82cdf5fe9ff76cee05d8a8d4370df59e15e1ee7f9",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/source_snapshot/trading_ai/portfolio_research.py",
+      "source_sha256": "0d5280b30181aaf51a5a7cb6ca65c40bd33aeeb5492517dbec2edf65e5a0f7d6",
+      "export_sha256": "458a328e6e74235d8c5d17ace81b931e982b84b0ed2aa31345402e3aa567d337",
+      "changed_for_export": true
+    },
+    {
+      "path": "research/demo_recovery_v2/source_snapshot/trading_ai/reporter.py",
+      "source_sha256": "0928b74efd7b16062901d4b1d40534e51a873476c82947c34a5753f856d10282",
+      "export_sha256": "0928b74efd7b16062901d4b1d40534e51a873476c82947c34a5753f856d10282",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/source_snapshot/trading_ai/research_validation.py",
+      "source_sha256": "bdf26268c90b900945d20f3321ea897f37c4986848d21142bf562bdb4e81cad8",
+      "export_sha256": "bdf26268c90b900945d20f3321ea897f37c4986848d21142bf562bdb4e81cad8",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/source_snapshot/trading_ai/risk.py",
+      "source_sha256": "cb0827bd854474294e7162a7035e3c112d22eb7d36639230a0aa46bdc68ddca0",
+      "export_sha256": "cb0827bd854474294e7162a7035e3c112d22eb7d36639230a0aa46bdc68ddca0",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/source_snapshot/trading_ai/runtime.py",
+      "source_sha256": "09f524a8e0985efcf48cfdc66eae5f9a593109212bc6c8f4d1a7b91803f4ef84",
+      "export_sha256": "09f524a8e0985efcf48cfdc66eae5f9a593109212bc6c8f4d1a7b91803f4ef84",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/source_snapshot/trading_ai/simulation.py",
+      "source_sha256": "5474617489728658a5109023a727fb2686e32021d9c2884eeab478b68e048c89",
+      "export_sha256": "5474617489728658a5109023a727fb2686e32021d9c2884eeab478b68e048c89",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/source_snapshot/trading_ai/strategy.py",
+      "source_sha256": "5ac1ee939db1f05da7fa547791ba7583fdf9ceb0233ca57c95ac87a2df0f6f7c",
+      "export_sha256": "5ac1ee939db1f05da7fa547791ba7583fdf9ceb0233ca57c95ac87a2df0f6f7c",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/source_snapshot/trading_ai/sync.py",
+      "source_sha256": "aabd90488147aecd2f363e87a8caf421568e7a745ea20c4098b67373168b8fc1",
+      "export_sha256": "aabd90488147aecd2f363e87a8caf421568e7a745ea20c4098b67373168b8fc1",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/supervisor.py",
+      "source_sha256": "5b9d831d1102e9e9994bcccf7471f5c5afe9df03ecce7f1ec66a56ce08939f86",
+      "export_sha256": "5b9d831d1102e9e9994bcccf7471f5c5afe9df03ecce7f1ec66a56ce08939f86",
+      "changed_for_export": false
+    },
+    {
+      "path": "research/demo_recovery_v2/test_supervisor.py",
+      "source_sha256": "8cd7179be5c2936e0264f2cf5a85a9ad384e8a1072b5f2a3b3f6783a7fa6bbff",
+      "export_sha256": "8cd7179be5c2936e0264f2cf5a85a9ad384e8a1072b5f2a3b3f6783a7fa6bbff",
+      "changed_for_export": false
     }
   ]
 }
