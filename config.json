@@ -1,0 +1,41 @@
+{
+  "mode": "DRY_RUN",
+  "terminal_path": "",
+  "account_login": 0,
+  "account_server": "",
+  "live_enabled": false,
+  "live_allowlist": [],
+  "magic": 2601023,
+  "strategies": [
+    "chatgpt_briefing_v1",
+    "local_breakout_v1",
+    "local_false_breakout_v1"
+  ],
+  "symbols": {},
+  "risk": {
+    "max_trade_pct": 0.25,
+    "max_total_pct": 0.5,
+    "max_daily_loss_pct": 1.0,
+    "max_positions": 2,
+    "min_rr": 1.5,
+    "max_tick_age_seconds": 10,
+    "max_briefing_age_seconds": 43200,
+    "margin_fraction": 0.5
+  },
+  "stop_policy": "manage",
+  "engine": {
+    "enabled": false
+  },
+  "collection": {
+    "enabled": false,
+    "interval_seconds": 60
+  },
+  "briefings": {
+    "timezone": "Europe/Warsaw",
+    "morning": "09:00",
+    "evening": "18:00"
+  },
+  "calendar": {
+    "enabled": false
+  }
+}

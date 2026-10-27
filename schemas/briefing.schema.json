@@ -1,0 +1,207 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Trading AI Briefing v1.0",
+  "description": "Structural schema. Runtime also checks unique IDs, timezone, chronology, price ordering and all broker/risk constraints.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "briefing_id",
+    "session",
+    "generated_at",
+    "signals"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "briefing_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_.-]{1,80}$"
+    },
+    "session": {
+      "enum": [
+        "morning",
+        "evening"
+      ]
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "signals": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "instrument",
+          "strategy",
+          "kind",
+          "entry",
+          "sl",
+          "tp",
+          "risk_pct",
+          "valid_from",
+          "valid_until",
+          "reason",
+          "structure",
+          "management"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_.-]{1,80}$"
+          },
+          "instrument": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_.-]{1,80}$"
+          },
+          "strategy": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_.-]{1,80}$"
+          },
+          "kind": {
+            "enum": [
+              "BUY",
+              "SELL",
+              "BUY_LIMIT",
+              "SELL_LIMIT",
+              "BUY_STOP",
+              "SELL_STOP"
+            ]
+          },
+          "entry": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "sl": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "tp": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "risk_pct": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "maximum": 0.25
+          },
+          "volume": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "valid_from": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "valid_until": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4000
+          },
+          "structure": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "timeframe",
+              "trend",
+              "lookback",
+              "invalidation"
+            ],
+            "properties": {
+              "timeframe": {
+                "enum": [
+                  "M1",
+                  "M5",
+                  "M15",
+                  "M30",
+                  "H1",
+                  "H4",
+                  "D1"
+                ]
+              },
+              "trend": {
+                "enum": [
+                  "UP",
+                  "DOWN",
+                  "RANGE"
+                ]
+              },
+              "lookback": {
+                "type": "integer",
+                "minimum": 6,
+                "maximum": 100
+              },
+              "invalidation": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              }
+            }
+          },
+          "management": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "break_even_r",
+              "trailing_distance",
+              "tp1",
+              "tp1_fraction",
+              "close_on_invalidation"
+            ],
+            "properties": {
+              "break_even_r": {
+                "anyOf": [
+                  {
+                    "type": "number",
+                    "exclusiveMinimum": 0
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "trailing_distance": {
+                "anyOf": [
+                  {
+                    "type": "number",
+                    "exclusiveMinimum": 0
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "tp1": {
+                "anyOf": [
+                  {
+                    "type": "number",
+                    "exclusiveMinimum": 0
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "tp1_fraction": {
+                "type": "number",
+                "exclusiveMinimum": 0,
+                "maximum": 0.9
+              },
+              "close_on_invalidation": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

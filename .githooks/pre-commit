@@ -1,0 +1,8 @@
+#!/bin/sh
+set -eu
+PYTHON="$(git config tradingai.scanPython || printf python)"
+DENY="$(git config tradingai.denyFile || true)"
+if [ -n "$DENY" ]; then
+  exec "$PYTHON" sync_tools/scan.py --staged --history --deny "$DENY"
+fi
+exec "$PYTHON" sync_tools/scan.py --staged --history

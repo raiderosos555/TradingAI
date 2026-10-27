@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "briefing_id": "EXAMPLE-2000-01-01-morning",
+  "session": "morning",
+  "generated_at": "2000-01-01T07:00:00Z",
+  "signals": [
+    {
+      "id": "EXAMPLE-gold-buy-001",
+      "instrument": "GOLD",
+      "strategy": "chatgpt_briefing_v1",
+      "kind": "BUY_LIMIT",
+      "entry": 100.0,
+      "sl": 99.0,
+      "tp": 102.0,
+      "risk_pct": 0.25,
+      "valid_from": "2000-01-01T07:00:00Z",
+      "valid_until": "2000-01-01T16:00:00Z",
+      "reason": "PRZYKŁAD FORMATU, fikcyjne ceny i celowo wygasła ważność. To nie jest plan handlowy.",
+      "structure": {"timeframe": "H1", "trend": "UP", "lookback": 18, "invalidation": 99.2},
+      "management": {
+        "break_even_r": 1.0,
+        "trailing_distance": 0.5,
+        "tp1": 101.0,
+        "tp1_fraction": 0.5,
+        "close_on_invalidation": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "spread_points": 20,
+  "slippage_points": 2,
+  "commission_per_lot_roundtrip": 10,
+  "swap_per_lot_per_day": -5
+}

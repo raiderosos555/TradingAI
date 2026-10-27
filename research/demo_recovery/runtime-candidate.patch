@@ -1,0 +1,34 @@
+--- a/trading_ai/runtime.py
++++ b/trading_ai/runtime.py
+@@ -119,7 +119,19 @@
+ 
+ 
+ def status_file(root, role, **data):
+-    atomic_write(root / f'{role}-status.json', canonical({'at': utcnow().isoformat(), 'pid': os.getpid(), **data}))
++    # Status is telemetry, not the durable trading journal. A Windows reader
++    # may temporarily deny replacement; that must not terminate error handling.
++    content = canonical({'at': utcnow().isoformat(), 'pid': os.getpid(), **data})
++    for attempt in range(3):
++        try:
++            atomic_write(root / f'{role}-status.json', content)
++            return True
++        except OSError:
++            if attempt < 2:
++                time.sleep(.05 * (attempt + 1))
++            else:
++                logging.getLogger('runtime.' + role).exception('Status publication failed; trading journal unchanged')
++    return False
+ 
+ 
+ def run(config_path, state, exchange, role, once=False):
+@@ -243,4 +255,9 @@
+     p.add_argument('--config', default='config.demo.json'); p.add_argument('--state', default='state')
+     p.add_argument('--exchange', default='exchange'); p.add_argument('--role', choices=['engine', 'baseline'], required=True)
+     p.add_argument('--once', action='store_true')
+-    a = p.parse_args(); run(a.config, a.state, a.exchange, a.role, a.once)
++    a = p.parse_args()
++    try:
++        run(a.config, a.state, a.exchange, a.role, a.once)
++    except BaseException:
++        logging.getLogger('runtime.' + a.role).exception('Unhandled runtime termination')
++        raise
