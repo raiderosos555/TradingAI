@@ -65,3 +65,7 @@ research/**/*.txt
 research/**/*.xml
 research/**/*.snapshot
 research/**/*.source
+
+# Research input archives and local evidence are never published.
+research/**/private/
+research/**/*.raw
