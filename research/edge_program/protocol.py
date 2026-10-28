@@ -1,0 +1,22 @@
+"""Edge program v1: fixed incremental-information questions, no grid search."""
+VERSION='edge-program-v1'
+ALIASES=('GOLD','US500','US100','OIL','EURUSD','GBPUSD','EURPLN')
+START='2026-04-27'
+SPLIT='2026-08-01'
+END='2026-10-24'
+WARMUP=80
+TREND_N=20
+RSI_N=14
+RSI_LOW=30
+RSI_HIGH=70
+Z_N=20
+Z_LIMIT=2
+ADX_N=14
+ADX_MIN=25
+DONCHIAN_N=20
+ATR_N=14
+VOL_MEDIAN_N=60
+SEED=20261028
+BOOT=4000
+BLOCK_DAYS=14
+PRIMARY_TESTS=36 # 21 trend + 3 RSI + 8 regime filters + 4 false breakouts
