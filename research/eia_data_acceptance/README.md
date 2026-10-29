@@ -7,6 +7,9 @@ z jawną korektą dostępu [PLAN_AMENDMENT_01.md](PLAN_AMENDMENT_01.md).
 Nowsza kontrola czasu i brakującego actual w kalendarzu:
 [DATA_READINESS_UPDATE.md](DATA_READINESS_UPDATE.md). Oficjalny bieżący
 endpoint EIA działa mimo 404 adresu archiwalnego ostatniego wydania.
+Gotowy przyszły odbiór źródła: [EIA_PILOT_PLAN.md](EIA_PILOT_PLAN.md).
+Skrypt pojedynczego zapisu sprawdzono na rzeczywistym pliku; nowe zadanie
+Windows nie jest instalowane bez odrębnej zgody.
 Brak testu strategii, brak P&L; aktywnego terminala nie wolno używać do tych sond.
 
 Z katalogu projektu, istniejącym Pythonem:

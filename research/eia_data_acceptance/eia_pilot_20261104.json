@@ -1,0 +1,17 @@
+{
+  "id": "eia-source-pilot-20261104-v1",
+  "registered_at_utc": "2026-10-29T18:11:57.525501+00:00",
+  "reference_date": "2026-10-30",
+  "scheduled_release_utc": "2026-11-04T15:30:00+00:00",
+  "start_utc": "2026-11-04T15:25:00+00:00",
+  "end_utc_exclusive": "2026-11-04T16:05:00+00:00",
+  "interval_seconds": 60,
+  "max_requests": 40,
+  "max_body_bytes": 2621440,
+  "mode": "SHADOW",
+  "orders_authorized": false,
+  "purpose": "Prospective source acceptance only, no price returns or trading edge inference",
+  "missing_policy": "Preserve failed/missed slots; no backfill or late catch-up",
+  "schedule_source": "https://www.eia.gov/petroleum/supply/weekly/schedule.php",
+  "installation_status": "PREPARED_NOT_INSTALLED"
+}

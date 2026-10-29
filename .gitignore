@@ -69,3 +69,5 @@ research/**/*.source
 # Research input archives and local evidence are never published.
 research/**/private/
 research/**/*.raw
+# Reviewed public schedule only; no raw source or account configuration.
+!research/eia_data_acceptance/eia_pilot_20261104.json
