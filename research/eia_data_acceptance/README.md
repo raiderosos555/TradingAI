@@ -4,6 +4,9 @@ Wynik tabel w [REPORT.md](REPORT.md); najnowszy wynik 12 udanych sond w
 [TICK_AVAILABILITY.md](TICK_AVAILABILITY.md). Wcześniejszy timeout zachowany w
 [TICK_PROBE_RESULT.md](TICK_PROBE_RESULT.md). Zakres w [PLAN.md](PLAN.md),
 z jawną korektą dostępu [PLAN_AMENDMENT_01.md](PLAN_AMENDMENT_01.md).
+Nowsza kontrola czasu i brakującego actual w kalendarzu:
+[DATA_READINESS_UPDATE.md](DATA_READINESS_UPDATE.md). Oficjalny bieżący
+endpoint EIA działa mimo 404 adresu archiwalnego ostatniego wydania.
 Brak testu strategii, brak P&L; aktywnego terminala nie wolno używać do tych sond.
 
 Z katalogu projektu, istniejącym Pythonem:
