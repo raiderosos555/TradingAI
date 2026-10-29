@@ -1,4 +1,7 @@
-"""Bounded probes in an already running investor terminal. Never submits orders."""
+"""Read-only bounded probes in an isolated DEMO terminal. Never submits orders.
+Account trading rights are recorded, not confused with script operations.
+See PLAN_AMENDMENT_01.md; terminal Algo/DLL must remain disabled.
+"""
 import argparse, hashlib, json, subprocess, sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -17,7 +20,6 @@ def gate(t,a,c,terminal,active_data):
         'separate_portable_data':bool(t and Path(t.data_path).resolve()==terminal.parent.resolve()
                                      and Path(t.data_path).resolve()!=active_data.resolve()),
         'same_demo_identity':bool(a and a.trade_mode==0 and a.server==c['account_server'] and a.login==int(c['account_login'])),
-        'investor_permissions':bool(a and not a.trade_allowed and not a.trade_expert),
         'terminal_trading_off':bool(t and not t.trade_allowed),
         'dll_off':bool(t and not t.dlls_allowed)}
     if not all(checks.values()):raise RuntimeError('Isolation/permissions gate: '+json.dumps(checks))
@@ -31,10 +33,14 @@ def child(root,terminal,day):
     require_running(terminal)
     if not mt5.initialize(path=str(terminal),portable=True,timeout=3000):raise RuntimeError('Research IPC unavailable')
     try:
-        checks=gate(mt5.terminal_info(),mt5.account_info(),c,terminal,active_data_directory(root))
+        t=mt5.terminal_info();a=mt5.account_info()
+        checks=gate(t,a,c,terminal,active_data_directory(root))
+        permissions={'account_trade_allowed':a.trade_allowed,'account_trade_expert':a.trade_expert,
+                     'terminal_trade_allowed':t.trade_allowed,'terminal_dlls_allowed':t.dlls_allowed}
         info=mt5.symbol_info(c['symbols']['OIL']['broker'])
-        if not info or not info.select:raise RuntimeError('OIL not available in research Market Watch')
+        if not info:raise RuntimeError('Configured OIL symbol not present in research terminal')
         start=datetime.fromisoformat(scheduled(day)); end=start+timedelta(seconds=1)
+        print('GATES_PASS; COPY_TICKS_REQUEST '+start.isoformat(),file=sys.stderr,flush=True)
         ticks=mt5.copy_ticks_range(info.name,start,end,mt5.COPY_TICKS_ALL)
         err=mt5.last_error()
         if ticks is None:raise RuntimeError('Tick API returned None: '+str(err))
@@ -47,7 +53,8 @@ def child(root,terminal,day):
         ordered=bool(np.all(np.diff(sample['time_msc'])>=0))
         rows=[{k:row[k].item() for k in ticks.dtype.names} for row in ticks]
         return {'day':day,'request_api_utc':start.isoformat(),'historical_utc_verified':False,
-                'gate':checks,'chart_mode':info.chart_mode,'api_error':err,'raw_rows':rows,
+                'gate':checks,'permissions':permissions,'selected_before_request':info.select,
+                'chart_mode':info.chart_mode,'api_error':err,'raw_rows':rows,
                 'ticks_in_second':len(sample),'positive_uncrossed_sides':int(valid.sum()),'ordered':ordered,
                 'bid_flag_updates':int(((sample['flags'] & mt5.TICK_FLAG_BID)!=0).sum()),
                 'ask_flag_updates':int(((sample['flags'] & mt5.TICK_FLAG_ASK)!=0).sum()),
@@ -68,7 +75,11 @@ def main(a):
         try:
             p=subprocess.run(args,capture_output=True,text=True,timeout=10,creationflags=subprocess.CREATE_NO_WINDOW)
             r=json.loads(p.stdout) if p.returncode==0 else {'day':day,'error':p.stderr[-1800:],'continue':False}
-        except subprocess.TimeoutExpired:r={'day':day,'error':'HARD_TIMEOUT_10S; terminal not stopped; background sync may continue','continue':False}
+        except subprocess.TimeoutExpired as e:
+            trace=e.stderr or b''
+            if isinstance(trace,bytes):trace=trace.decode(errors='replace')
+            r={'day':day,'error':'HARD_TIMEOUT_10S; terminal not stopped; background sync may continue',
+               'phase_trace':trace[-1800:],'continue':False}
         raw=json.dumps(r,indent=2).encode();(a.out/(d+'.json')).write_bytes(raw)
         results.append({k:v for k,v in r.items() if k!='raw_rows'})
         results[-1]['sha256']=hashlib.sha256(raw).hexdigest()

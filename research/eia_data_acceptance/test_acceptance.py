@@ -1,4 +1,4 @@
-import unittest
+import ast,unittest
 from pathlib import Path
 from types import SimpleNamespace as NS
 from validate_tables import parse, scheduled, validate, HERE
@@ -32,11 +32,20 @@ class AcceptanceTests(unittest.TestCase):
         a=NS(trade_mode=0,server='TEST',login=1,trade_allowed=False,trade_expert=False)
         terminal=Path('C:/research/terminal64.exe');active=Path('C:/active-data')
         self.assertTrue(all(gate(t,a,c,terminal,active).values()))
-        for obj,attr,value in ((a,'trade_allowed',True),(a,'login',2),(t,'dlls_allowed',True),
+        a.trade_allowed=True;a.trade_expert=True
+        self.assertTrue(all(gate(t,a,c,terminal,active).values()))
+        for obj,attr,value in ((a,'trade_mode',2),(a,'login',2),(t,'dlls_allowed',True),(t,'trade_allowed',True),
                                 (t,'data_path','C:/active-data'),(t,'path','C:/active')):
             old=getattr(obj,attr);setattr(obj,attr,value)
             with self.assertRaises(RuntimeError):gate(t,a,c,terminal,active)
             setattr(obj,attr,old)
+    def test_probe_mt5_call_allowlist(self):
+        tree=ast.parse((HERE/'probe_ticks.py').read_text())
+        calls={n.func.attr for n in ast.walk(tree) if isinstance(n,ast.Call)
+               and isinstance(n.func,ast.Attribute) and isinstance(n.func.value,ast.Name) and n.func.value.id=='mt5'}
+        self.assertEqual(calls,{'initialize','terminal_info','account_info','symbol_info','copy_ticks_range','last_error','shutdown'})
+        self.assertFalse(any(isinstance(n,ast.Call) and isinstance(n.func,ast.Name)
+                             and n.func.id in ('eval','exec','getattr') for n in ast.walk(tree)))
     @unittest.skipUnless((HERE/'private/tables-v1/manifest.json').exists(),'Private source archive not installed')
     def test_real_source_integrity(self):
         r=validate(HERE/'private/tables-v1')
