@@ -9,7 +9,8 @@ Nowsza kontrola czasu i brakującego actual w kalendarzu:
 endpoint EIA działa mimo 404 adresu archiwalnego ostatniego wydania.
 Gotowy przyszły odbiór źródła: [EIA_PILOT_PLAN.md](EIA_PILOT_PLAN.md).
 Skrypt pojedynczego zapisu sprawdzono na rzeczywistym pliku; nowe zadanie
-Windows nie jest instalowane bez odrębnej zgody.
+Windows pozostaje niezainstalowane na wyraźne życzenie właściciela
+z 29.10.2026; odbiór 4 listopada nie uruchomi się automatycznie.
 Brak testu strategii, brak P&L; aktywnego terminala nie wolno używać do tych sond.
 
 Z katalogu projektu, istniejącym Pythonem:

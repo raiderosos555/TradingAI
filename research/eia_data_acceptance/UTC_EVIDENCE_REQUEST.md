@@ -26,3 +26,34 @@ informacji. Harmonogram i HTTP Last-Modified nie wystarczają do ścisłego
 testu szybkiej reakcji. Alternatywa to prospektywne rejestrowanie pierwszego
 odbioru kolejnych wydań z istniejącym forward, według planu ustalonego przed
 oglądaniem reakcji. Nie zastępujemy konsensusu tygodniową zmianą zapasów.
+
+## Weryfikacja publicznych źródeł 29–30.10.2026
+
+Sprawdzono [podręcznik MT5 dla OANDA TMS](https://help.oanda.com/eu/pl/faqs/mt5-user-guide-eu.htm).
+Dotyczy właściwej spółki, lecz w odczytanej treści nie znaleziono definicji
+historycznych `time_msc` Python ani reguł ich konwersji na UTC. Opis końca
+świecy dziennej nie zastępuje takiej definicji.
+
+[Komunikat TMS](https://www.tms.pl/aktualnosci/zmiana-czasu-w-europie-5)
+jest indeksowany jako zmiana godzin handlu od 29.03.2026. Bezpośredni odczyt
+zwrócił głównie formularz i treści ogólne. Nie uzyskano dowodu semantyki API.
+Harmonogram sesji sam nie określa kodowania czasu ticków; nie przyjęto offsetu.
+
+[Dokumentacja OANDA UK](https://www.oanda.com/uk-en/trading/standard-account/differences/)
+opisuje zegar MT5 związany z końcem dnia w Nowym Jorku. Dotyczy innej spółki;
+nie przenosimy tej reguły na TMS. Nie znaleziono wystarczającego publicznego
+potwierdzenia; nie dowiedziono, że nigdzie nie istnieje. Nie powtarzać tych
+samych zapytań bez nowego źródła lub odpowiedzi brokera.
+
+Nadal potrzebny jest opis interfejsu od OANDA TMS wraz ze sprawdzalnym
+historycznym przykładem. Pytania powyżej pozostają niewysłaną wiadomością;
+żadnego kontaktu z brokerem nie wykonano.
+
+Właściciel 29.10 wybrał pozostawienie skryptu EIA bez instalacji
+(EIA_PILOT_PLAN.md). Nie jest to oczekiwanie na działający proces:
+pilot nie ma zaplanowanego automatycznego wykonania. Nie omijamy decyzji
+przez inną usługę, automatyzację ani uruchomienie skryptu w tle.
+
+Brak nowego wyniku strategii. Historyczny replay EIA pozostaje NO-GO z powodu
+UTC, dostępności pierwszych publikacji, pełnych okien Bid/Ask i kosztów.
+Punktowe próbki ticków ani dzisiejszy plik EIA nie usuwają tych braków.
